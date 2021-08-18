@@ -1,5 +1,5 @@
 # This is my portfolio README.md
 
-Website: [https://michal-radomski.github.io/](https://michal-radomski.github.io/)
+Portfolio: [https://michal-radomski.github.io/](https://michal-radomski.github.io/)
 
 GitHub profile: [https://github.com/Michal-Radomski/](https://github.com/Michal-Radomski/)
