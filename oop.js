@@ -11,7 +11,7 @@ class Person {
     this.motto = motto;
   }
   speaks() {
-    return `${this.name} speaks: ${this.motto}`;
+    return `${this.name} speaks: \n ${this.motto}`;
   }
 }
 const personBobMarley = new Person("Bob Marley", "No Woman, No Cry");
