@@ -18,9 +18,14 @@ h1 {
   font-size: 200px;
 }
 
+div.w3-top {
+  height: 51px;
+}
+
 header {
-  background-image: url(./Media/header.jpg);
+  background-image: url(./Media/header2.jpg);
   width: 100%;
   height: 640px;
+  margin-top: 51px;
 }
 /*# sourceMappingURL=style.css.map */
