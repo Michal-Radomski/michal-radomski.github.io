@@ -2,7 +2,7 @@ let bits = {
   bit_0: 0,
   bit_1: 1,
   showBits() {
-    return `bits are: ${this.bit_0} and ${this.bit_1}`;
+    return `Bits are: ${this.bit_0} and ${this.bit_1}`;
   },
 };
 class Person {
@@ -10,12 +10,12 @@ class Person {
     this.name = name;
     this.motto = motto;
   }
-  speaks() {
-    return `${this.name} speaks: \n ${this.motto}`;
+  says() {
+    return `${this.name} says: \n ${this.motto}`;
   }
 }
 const personBobMarley = new Person("Bob Marley", "No Woman, No Cry");
-console.log(personBobMarley.speaks());
+console.log(personBobMarley.says());
 class Programmer extends Person {
   constructor(name, motto) {
     super(name, motto);
@@ -25,4 +25,4 @@ class Programmer extends Person {
   }
 }
 const person_MR = new Programmer("Michal Radomski", "No Code No Fun");
-console.log(`${person_MR.speaks()} and ${person_MR.codes()}`);
+console.log(`${person_MR.says()} and \n ${person_MR.codes()}`);
