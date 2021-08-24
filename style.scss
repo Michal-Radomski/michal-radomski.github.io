@@ -1,21 +1,10 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
+* {
+  box-sizing: border-box;
 }
-.w3-bar,
-h1 {
-  font-family: "Montserrat", sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: initial;
 }
-.fa-anchor,
-.fa-coffee {
-  font-size: 200px;
-}
-// *My styles
 div.w3-top {
   height: 51px;
 }
@@ -24,4 +13,10 @@ header {
   width: 100%;
   height: 685px;
   margin-top: 51px;
+}
+
+// ---------------\
+.fa-anchor,
+.fa-coffee {
+  font-size: 200px;
 }
