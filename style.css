@@ -19,6 +19,33 @@ header {
   margin-top: 51px;
 }
 
+h1 {
+  text-align: center;
+}
+
+div.myWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  max-width: 1260px !important;
+}
+
+a {
+  color: blue;
+}
+
 .fa-anchor,
 .fa-coffee {
   font-size: 200px;

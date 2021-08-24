@@ -5,6 +5,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background-color: initial;
 }
+// topNap + Header
 div.w3-top {
   height: 51px;
 }
@@ -14,8 +15,24 @@ header {
   height: 685px;
   margin-top: 51px;
 }
+// Description of the apps
+h1 {
+  text-align: center;
+}
+div.myWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  max-width: 1260px !important;
+}
 
-// ---------------\
+a {
+  color: blue;
+}
+
+// --------------\
 .fa-anchor,
 .fa-coffee {
   font-size: 200px;
