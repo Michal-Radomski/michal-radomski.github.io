@@ -4,7 +4,7 @@
 }
 
 body {
-  font: "Ubuntu", sans-serif;
+  font: "Ubuntu", sans-serif !important;
   background-color: initial;
 }
 
@@ -44,6 +44,7 @@ div.myWrapper {
 
 div.myWrapper div.textPart {
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 div.myWrapper div.textPart a {
@@ -53,6 +54,8 @@ div.myWrapper div.textPart a {
 div.myWrapper div.picPart {
   max-width: 450px !important;
   min-width: 380px !important;
+  margin-right: 10px;
+  margin-left: 10px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -60,10 +63,5 @@ div.myWrapper div.picPart {
 
 div.myWrapper div.picPart img {
   width: 100%;
-}
-
-.fa-anchor,
-.fa-coffee {
-  font-size: 200px;
 }
 /*# sourceMappingURL=style.css.map */
