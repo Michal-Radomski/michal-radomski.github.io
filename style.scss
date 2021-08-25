@@ -1,8 +1,12 @@
+$primary-color: #3f51b5;
+$font-stack: "Ubuntu", sans-serif;
+
 * {
   box-sizing: border-box;
 }
 body {
-  font-family: "Open Sans", sans-serif;
+  // font-family: "Ubuntu", sans-serif;
+  font: $font-stack;
   background-color: initial;
 }
 // topNap + Header
@@ -26,10 +30,20 @@ div.myWrapper {
   justify-content: space-between;
   align-items: flex-end;
   max-width: 1260px !important;
-}
-
-a {
-  color: blue;
+  div.textPart {
+    margin-right: 10px;
+    a {
+      color: $primary-color;
+    }
+  }
+  div.picPart {
+    max-width: 450px;
+    min-width: 380px;
+    flex: 1;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 // --------------\

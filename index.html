@@ -9,13 +9,14 @@
     <title>My Portfolio</title>
     <!-- External scrips/ stylesheets -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- My script/stylesheet -->
+    <!-- My script/stylesheet/favicon -->
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <link rel="icon" type="image/png" href="./Media/coding.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    </style>
   </head>
   <body>
     <!-- Navbar -->
@@ -57,10 +58,12 @@
     <div class="w3-row-padding w3-padding-64 w3-container">
       <h1>Live ISS Tracker (3D)</h1>
       <div class="w3-content myWrapper">
-        <div class="w3-twothird">
+        <div class="w3-half textPart">
           <h5 class="w3-padding-24">An application that provides a lot of live information about the ISS.</h5>
-          <a href="https://test-proj-gda5.web.app" target="_black">Link to the application</a><br />
-          <a href="https://github.com/Michal-Radomski/ISS-Tracker-3D-jQuery" target="_blank">Link to the repository</a><br />
+          <h6><a href="https://test-proj-gda5.web.app" target="_black">Link to the application</a></h6>
+          <h6>
+            <a href="https://github.com/Michal-Radomski/ISS-Tracker-3D-jQuery" target="_blank">Link to the repository</a>
+          </h6>
           <p class="w3-text-grey">
             The application gets ISS data from the web API. The large OSM/ Leaflet map shows the current movement parameters
             (like speed, altitude, position, etc.). The positions of the ISS and sun icons are real and updated every 1s. The
@@ -72,8 +75,8 @@
             moonrise / moonset.
           </p>
         </div>
-        <div class="w3-third w3-right" style="width: 400px !important; margin-left: 10px; flex: 1">
-          <img src="./App_pics/ISS.png" alt="3D ISS path" width="100%" />
+        <div class="w3-half w3-right picPart">
+          <img src="./App_pics/ISS.png" alt="3D ISS path" />
         </div>
       </div>
     </div>

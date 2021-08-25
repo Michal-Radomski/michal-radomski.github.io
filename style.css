@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font: "Ubuntu", sans-serif;
   background-color: initial;
 }
 
@@ -42,8 +42,24 @@ div.myWrapper {
   max-width: 1260px !important;
 }
 
-a {
-  color: blue;
+div.myWrapper div.textPart {
+  margin-right: 10px;
+}
+
+div.myWrapper div.textPart a {
+  color: #3f51b5;
+}
+
+div.myWrapper div.picPart {
+  max-width: 450px;
+  min-width: 380px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+div.myWrapper div.picPart img {
+  width: 100%;
 }
 
 .fa-anchor,
