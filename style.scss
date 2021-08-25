@@ -37,8 +37,8 @@ div.myWrapper {
     }
   }
   div.picPart {
-    max-width: 450px;
-    min-width: 380px;
+    max-width: 450px !important;
+    min-width: 380px !important;
     flex: 1;
     img {
       width: 100%;
