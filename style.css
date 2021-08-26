@@ -9,7 +9,7 @@ body {
 }
 
 .ubuntuFonts {
-  font: "Ubuntu", sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 div.w3-top {
