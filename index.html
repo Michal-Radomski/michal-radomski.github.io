@@ -114,37 +114,36 @@
         </div>
       </div>
     </div>
-    <hr />
-    <!-- ISS Tracker 3D Grid -->
+    <!-- Random Color Generator Grid -->
     <div class="w3-row-padding w3-padding-64 w3-container">
-      <h1 style="font-family: 'Ubuntu', sans-serif">Live ISS Tracker (3D)</h1>
+      <h1 style="font-family: 'Ubuntu', sans-serif">Random Color Generator</h1>
       <div class="w3-content myWrapper">
         <div class="w3-half textPart">
           <h5 class="w3-padding-24" style="font-family: 'Ubuntu', sans-serif">
-            An application that provides a lot of live information about the ISS.
+            This is a random color generator and color modifier. Bootstrap material was used to build the application.
           </h5>
           <h6 style="font-family: 'Ubuntu', sans-serif">
-            <a href="https://test-proj-gda5.web.app" target="_black">Link to the application</a>
+            <a href="https://test-proj-gda4.web.app" target="_black">Link to the application</a>
           </h6>
           <h6 style="font-family: 'Ubuntu', sans-serif">
-            <a href="https://github.com/Michal-Radomski/ISS-Tracker-3D-jQuery" target="_blank">Link to the repository</a>
+            <a href="https://github.com/Michal-Radomski/Color-generator-boostrap" target="_blank">Link to the repository</a>
           </h6>
           <p class="w3-text-grey" style="font-family: 'Ubuntu', sans-serif">
-            The application gets ISS data from the web API. The large OSM/ Leaflet map shows the current movement parameters
-            (like speed, altitude, position, etc.). The positions of the ISS and sun icons are real and updated every 1s. The
-            ISS visibility circles are generated on an ongoing basis: over the horizon and 20 degrees above the horizon.
-            Below is an accordion. The first tab is the ISS dynamic height plot - actual data (CanvasJS library used). The
-            second tab is the dynamic table of ISS values ​​(last 5 seconds). The third tab shows the visible ISS transitions
-            at a given location, at least 20 degrees above the horizon for the next 72 hours. The fourth tab displays TLE of
-            ISS. Below is the ISS 3D path around the Earth (CesiumJS library used) and actual data such as sunrise / sunset,
-            moonrise / moonset.
+            The application generates one of 16.777 million colors and queries
+            <a href="https://www.thecolorapi.com" target="_blank">https://www.thecolorapi.com</a> for the nearest HTML color
+            with the name. Then you can change the color with the RGB sliders. The color changes continuously and is
+            displayed in grayscale next to it. The grayscale can be changed using the HSL sliders. All values are converted
+            on an ongoing basis: #HEX, RGB, HSL and CMYK. There are generated on an ongoing basis RGB, CMYK charts, Hue
+            circle and Saturation and Lightness charts. More information is provided in the
+            <a href="https://github.com/Michal-Radomski/Color-generator-boostrap" target="_blank">repository</a>.
           </p>
         </div>
         <div class="w3-half w3-right picPart">
-          <img src="./App_pics/ISS.png" alt="3D ISS path" />
+          <img src="./App_pics/colorGenerator.png" alt="3D ISS path" />
         </div>
       </div>
     </div>
+
     <!-- GameWorld Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
       <h1 style="font-family: 'Ubuntu', sans-serif">GAMEWORLD</h1>
