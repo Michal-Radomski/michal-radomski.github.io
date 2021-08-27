@@ -8,7 +8,7 @@ function ResponsiveMenu() {
   }
 }
 
-//Adding random BGC for header > h2
+// Adding random BGC for apps tittle -> h2
 let randomColorsTitle = randomColor({count: 4, luminosity: "bright", alpha: 0.8});
 // console.log("randomColorsTitle:", randomColorsTitle);
 let titleBGC = document.querySelectorAll("h2.ubuntuFonts");
@@ -18,3 +18,15 @@ titleBGC.forEach(
     (elem.style.textShadow = `0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]},
 0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]}`)
 );
+
+// Random color for text and textShadow of title and footer
+let randomColorsText = randomColor({count: 2, luminosity: "dark", alpha: 0.9});
+let randomColorsTextShadow = randomColor({count: 2, luminosity: "light", alpha: 0.4});
+let infoText = [];
+infoText[0] = document.querySelector("h1.title");
+infoText[1] = document.querySelector("#footerInfo");
+for (let i = 0; i < infoText.length; i++) {
+  infoText[i].style.color = randomColorsText[i];
+  infoText[i].style.textShadow = `0px 0px 35px ${randomColorsTextShadow[i]}, 0px 0px 35px ${randomColorsTextShadow[i]},
+  0px 0px 35px ${randomColorsTextShadow[i]}, 0px 0px 35px ${randomColorsTextShadow[i]}`;
+}

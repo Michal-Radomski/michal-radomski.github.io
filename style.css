@@ -74,4 +74,14 @@ div.myWrapper div.picPart {
 div.myWrapper div.picPart img {
   width: 100%;
 }
+
+footer h3 {
+  text-align: center;
+  color: unset;
+  font-style: italic;
+}
+
+footer h3 a {
+  color: #3f51b5;
+}
 /*# sourceMappingURL=style.css.map */

@@ -57,3 +57,14 @@ div.myWrapper {
     }
   }
 }
+// Footer
+footer {
+  h3 {
+    text-align: center;
+    color: unset;
+    font-style: italic;
+    a {
+      color: $primary-color;
+    }
+  }
+}
