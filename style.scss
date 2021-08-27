@@ -45,6 +45,10 @@ div.myWrapper {
     margin-left: 10px;
     a {
       color: $primary-color;
+      &:hover {
+        filter: brightness(60%);
+        font-weight: bold;
+      }
     }
   }
   div.picPart {
@@ -72,18 +76,21 @@ footer {
     font-style: italic;
     a {
       color: $primary-color;
+      &:hover {
+        filter: brightness(60%);
+      }
     }
   }
 }
 
 // ---------------------
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+// The modal - background
+div.modal {
+  display: none; // Hidden by default
+  position: fixed;
+  z-index: 1;
+  // padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */

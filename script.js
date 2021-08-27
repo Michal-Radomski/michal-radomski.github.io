@@ -9,7 +9,7 @@ function ResponsiveMenu() {
 }
 
 // Adding random textShadow for apps tittle -> h2
-let randomColorsTitle = randomColor({count: 4, luminosity: "bright", alpha: 0.5});
+let randomColorsTitle = randomColor({count: 4, luminosity: "light", alpha: 0.85});
 // console.log("randomColorsTitle:", randomColorsTitle);
 let titleBGC = document.querySelectorAll("h2.ubuntuFonts");
 // console.log("titleBGC:", titleBGC);
@@ -24,32 +24,31 @@ randomColorsTitleText = randomColorsTitleText.reverse();
 titleBGC.forEach((elem, i) => (elem.style.color = randomColorsTitleText[i]));
 
 // Random color for text of title and footer
-let randomColorsText = randomColor({count: 2, hue: "green || blue", luminosity: "dark", alpha: 0.9});
+let randomColorsText = randomColor({count: 2, hue: "green || blue || pink|| purple", luminosity: "dark", alpha: 0.9});
 document.querySelector("#footerInfo").style.color = randomColorsText[0];
 document.querySelector("h1.title").style.color = randomColorsText[1];
 
-// -----------------------
-// Get the modal
+// Displaying the Modal Image
+// Getting the Modal
 let modal = document.getElementById("modalImage");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-let img = document.querySelectorAll(".w3-half>img");
-console.log(img);
-let modalImg = document.getElementById("img01");
+// Getting the image and inserting it inside the modal - using its "alt" text as an image caption
+let imageNodeList = document.querySelectorAll(".w3-half>img");
+// console.log("imageNodeList:", imageNodeList);
+let modalImg = document.getElementById("imageBig");
 let captionText = document.getElementById("caption");
-img.forEach(
+imageNodeList.forEach(
   (elem) =>
     (elem.onclick = function () {
       modal.style.display = "block";
       modalImg.src = this.src;
       captionText.innerHTML = this.alt;
+      // console.log("Clicked elem:", elem);
     })
 );
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
+// Getting the <span> element that closes the Modal
+let spanClose = document.querySelector(".close");
+// console.log(spanClose);
+// Closing the Modal after a user clicks on <span> (x)
+spanClose.onclick = function () {
   modal.style.display = "none";
 };
