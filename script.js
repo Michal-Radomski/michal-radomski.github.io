@@ -19,14 +19,7 @@ titleBGC.forEach(
 0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]}`)
 );
 
-// Random color for text and textShadow of title and footer
-let randomColorsText = randomColor({count: 2, luminosity: "dark", alpha: 0.9});
-let randomColorsTextShadow = randomColor({count: 2, luminosity: "light", alpha: 0.4});
-let infoText = [];
-infoText[0] = document.querySelector("h1.title");
-infoText[1] = document.querySelector("#footerInfo");
-for (let i = 0; i < infoText.length; i++) {
-  infoText[i].style.color = randomColorsText[i];
-  infoText[i].style.textShadow = `0px 0px 35px ${randomColorsTextShadow[i]}, 0px 0px 35px ${randomColorsTextShadow[i]},
-  0px 0px 35px ${randomColorsTextShadow[i]}, 0px 0px 35px ${randomColorsTextShadow[i]}`;
-}
+// Random color for text of title and footer
+let randomColorsText = randomColor({count: 2, hue: "green || blue", luminosity: "dark", alpha: 0.9});
+document.querySelector("#footerInfo").style.color = randomColorsText[0];
+document.querySelector("h1.title").style.color = randomColorsText[1];
