@@ -23,7 +23,12 @@ header {
   margin-top: 51px;
 }
 
-h1 {
+h1.title {
+  text-align: center;
+  font-style: italic;
+}
+
+h2 {
   text-align: center;
 }
 

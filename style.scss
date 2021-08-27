@@ -22,8 +22,13 @@ header {
   height: 685px;
   margin-top: 51px;
 }
+// Title of the portfolio
+h1.title {
+  text-align: center;
+  font-style: italic;
+}
 // Description of the apps
-h1 {
+h2 {
   text-align: center;
 }
 div.myWrapper {
