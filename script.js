@@ -9,7 +9,12 @@ function ResponsiveMenu() {
 }
 
 //Adding random BGC for header > h2
-let randomColors = randomColor({count: 3, luminosity: "light", alpha: 0.8});
-// console.log("randomColors:", randomColors);
-document.querySelector("h1.title").style.textShadow = `0px 0px 35px ${randomColors[0]}, 0px 0px 35px ${randomColors[0]},
-0px 0px 35px ${randomColors[0]}, 0px 0px 35px ${randomColors[0]}`;
+let randomColorsTitle = randomColor({count: 4, luminosity: "bright", alpha: 0.8});
+// console.log("randomColorsTitle:", randomColorsTitle);
+let titleBGC = document.querySelectorAll("h2.ubuntuFonts");
+// console.log("titleBGC:", titleBGC);
+titleBGC.forEach(
+  (elem, i) =>
+    (elem.style.textShadow = `0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]},
+0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]}`)
+);
