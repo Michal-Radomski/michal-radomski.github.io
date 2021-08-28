@@ -87,7 +87,7 @@ div.myWrapper div.picPart img {
 }
 
 div.myWrapper div.picPart img:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 footer h3 {
@@ -109,41 +109,50 @@ div.modal {
   display: none;
   position: fixed;
   z-index: 1;
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
-  overflow: auto;
-  /* Enable scroll if needed */
-  background-color: black;
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
+div.modal span.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: yellowgreen;
+  font-size: 45px;
+  font-weight: bolder;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-/* Caption of Modal Image */
-#caption {
+div.modal span.close:hover, div.modal span.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+div.modal img.modal-content {
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
+  max-height: 85%;
+  max-width: 85%;
+}
+
+div.modal #caption {
+  margin: auto;
+  display: block;
   text-align: center;
-  color: #ccc;
+  color: yellowgreen;
   padding: 10px 0;
-  height: 150px;
+  font-size: x-large;
+  font-style: italic;
 }
 
-/* Add Animation */
 .modal-content,
 #caption {
   -webkit-animation-name: zoom;
@@ -172,29 +181,12 @@ div.modal {
   }
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
+  img.modal-content {
+    margin: auto;
+    display: block;
+    max-height: 95%;
+    max-width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
