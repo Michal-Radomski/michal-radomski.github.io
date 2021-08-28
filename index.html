@@ -36,22 +36,16 @@
         <a
           href="https://github.com/Michal-Radomski"
           target="_blank"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-          >GH Profile</a
-        >
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()"
-          >Credits</a
-        >
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GH Profile</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openResumeModal()">Resume</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openContactModal()">Contact</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()">Credits</a>
       </div>
       <!-- Navbar on small screens -->
       <div id="topNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="https://github.com/Michal-Radomski" target="_blank" class="w3-bar-item w3-button w3-padding-large"
-          >GH Profile</a
-        >
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Resume</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
+        <a href="https://github.com/Michal-Radomski" target="_blank" class="w3-bar-item w3-button w3-padding-large">GH Profile</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="openResumeModal()">Resume</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="openContactModal()">Contact</a>
         <a class="w3-bar-item w3-button w3-padding-large" onclick="openCreditsModal()">Credits</a>
       </div>
     </div>
@@ -177,6 +171,7 @@
       <img class="modal-content" id="imageBig" />
       <div id="caption" ></div>
     </div>
+    <!-- NavBar Modals -->
     <!-- Credits Modal -->
     <div id="creditsModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
@@ -190,7 +185,7 @@
         </div>
         <footer class="w3-container w3-teal">
           <div class="w3-center">
-            <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeCreditsModal()">
+            <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
               Close
             </button>
           </div>
@@ -207,13 +202,11 @@
   </body>
 </html>
 
-
-
-
+<!-- Contact Modal -->
 <div id="contactModal" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
     <header class="w3-container w3-teal">
-      <h2>Credits</h2>
+      <h2>Contact</h2>
     </header>
     <div class="w3-container modalContent">
       <p>Some text..</p>
@@ -221,7 +214,7 @@
     </div>
     <footer class="w3-container w3-teal">
       <div class="w3-center">
-        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeCreditsModal()">
+        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
           Close
         </button>
       </div>
@@ -230,11 +223,11 @@
   </div>
 </div>
 
-
-<!-- <div id="creditsModal" class="w3-modal">
+<!-- Resume Modal -->
+<div id="resumeModal" class="w3-modal">
   <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
     <header class="w3-container w3-teal">
-      <h2>Credits</h2>
+      <h2>Resume</h2>
     </header>
     <div class="w3-container modalContent">
       <p>Some text..</p>
@@ -242,11 +235,11 @@
     </div>
     <footer class="w3-container w3-teal">
       <div class="w3-center">
-        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeCreditsModal()">
+        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
           Close
         </button>
       </div>
       </div>
     </footer>
   </div>
-</div> -->
+</div>

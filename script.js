@@ -65,6 +65,17 @@ document.addEventListener("keydown", function (event) {
 function openCreditsModal() {
   document.querySelector("#creditsModal").style.display = "block";
 }
-function closeCreditsModal() {
-  document.querySelector("#creditsModal").style.display = "none";
+// Contact Modal
+function openContactModal() {
+  document.querySelector("#contactModal").style.display = "block";
+}
+// Resume Modal
+function openResumeModal() {
+  document.querySelector("#resumeModal").style.display = "block";
+}
+// Close NavBar Modal by button
+function closeNavBarModal() {
+  closeNavBarModals = document.querySelectorAll(".w3-modal");
+  // console.log("closeNavBarModals:", closeNavBarModals);
+  closeNavBarModals.forEach((elem) => (elem.style.display = "none"));
 }
