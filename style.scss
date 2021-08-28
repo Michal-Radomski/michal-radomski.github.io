@@ -6,12 +6,29 @@ $font-stack: "Ubuntu", sans-serif !important;
 }
 body {
   // font-family: "Ubuntu", sans-serif;
-  font: $font-stack;
+  font-family: $font-stack;
   background-color: initial;
 }
 .ubuntuFonts {
   font-family: $font-stack;
 }
+
+html {
+  font-family: $font-stack;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-stack;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px 0;
+}
+
 // topNap + Header
 div.w3-top {
   height: 51px !important;
@@ -165,17 +182,23 @@ div.modal {
 
 // Modals for NavBar
 div.modalNavBar {
-  color: inherit header {
+  color: inherit;
+  header {
     color: inherit;
+    h2 {
+      font-family: $font-stack;
+    }
   }
   div.modalContent {
     color: inherit;
+    font-family: $font-stack;
   }
   footer {
     color: inherit;
     padding: 20px;
     div button.modalButton {
       color: inherit;
+      font-family: $font-stack;
     }
   }
 }

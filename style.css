@@ -4,12 +4,28 @@
 }
 
 body {
-  font: "Ubuntu", sans-serif !important;
+  font-family: "Ubuntu", sans-serif !important;
   background-color: initial;
 }
 
 .ubuntuFonts {
   font-family: "Ubuntu", sans-serif !important;
+}
+
+html {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu", sans-serif !important;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px 0;
 }
 
 div.w3-top {
@@ -190,12 +206,20 @@ div.modal #caption {
 }
 
 div.modalNavBar {
-  color: inherit header;
-  color-color: inherit;
+  color: inherit;
+}
+
+div.modalNavBar header {
+  color: inherit;
+}
+
+div.modalNavBar header h2 {
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 div.modalNavBar div.modalContent {
   color: inherit;
+  font-family: "Ubuntu", sans-serif !important;
 }
 
 div.modalNavBar footer {
@@ -205,5 +229,6 @@ div.modalNavBar footer {
 
 div.modalNavBar footer div button.modalButton {
   color: inherit;
+  font-family: "Ubuntu", sans-serif !important;
 }
 /*# sourceMappingURL=style.css.map */
