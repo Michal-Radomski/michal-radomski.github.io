@@ -238,4 +238,22 @@ div.modalNavBar footer div button.modalButton:hover {
   background-color: teal !important;
   color: white !important;
 }
+
+p.modalContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+p.modalContact span {
+  color: darkmagenta;
+  font: bold;
+}
 /*# sourceMappingURL=style.css.map */

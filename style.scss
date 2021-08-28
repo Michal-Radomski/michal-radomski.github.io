@@ -213,3 +213,17 @@ div.modalNavBar {
     }
   }
 }
+p.modalContact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  // float: left;
+  // left: 20px;
+  span {
+    // float: right;
+    color: darkmagenta;
+    font: bold;
+    // right: 20px;
+  }
+}
