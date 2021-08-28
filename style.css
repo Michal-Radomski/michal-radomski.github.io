@@ -197,26 +197,45 @@ div.modal #caption {
 }
 
 div.modalNavBar {
-  color: inherit;
+  border-radius: 25px;
 }
 
 div.modalNavBar header {
-  color: inherit;
+  border-radius: 25px 25px 0 0;
 }
 
 div.modalNavBar header h2 {
-  color: inherit;
+  text-align: center;
+  font-style: italic;
 }
 
 div.modalNavBar div.modalContent {
-  color: inherit;
+  font-size: 16px;
+}
+
+div.modalNavBar div.modalContent a {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+div.modalNavBar div.modalContent a:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  text-decoration: underline;
 }
 
 div.modalNavBar footer {
   padding: 20px;
+  border-radius: 0 0 25px 25px;
 }
 
 div.modalNavBar footer div button.modalButton {
   font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+}
+
+div.modalNavBar footer div button.modalButton:hover {
+  background-color: teal !important;
+  color: white !important;
 }
 /*# sourceMappingURL=style.css.map */
