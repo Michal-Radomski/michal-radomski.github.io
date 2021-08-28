@@ -52,3 +52,10 @@ let spanClose = document.querySelector(".close");
 spanClose.onclick = function () {
   modal.style.display = "none";
 };
+// Closing modal by Escape key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    spanClose.click();
+    // modal.style.display = "none";  //* the same what above
+  }
+});

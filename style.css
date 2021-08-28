@@ -65,7 +65,6 @@ div.myWrapper div.textPart a {
 div.myWrapper div.textPart a:hover {
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
-  font-weight: bold;
 }
 
 div.myWrapper div.picPart {
