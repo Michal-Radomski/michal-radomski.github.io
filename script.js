@@ -74,8 +74,14 @@ function openResumeModal() {
   document.querySelector("#resumeModal").style.display = "block";
 }
 // Close NavBar Modal by button
+closeNavBarModals = document.querySelectorAll(".w3-modal");
+// console.log("closeNavBarModals:", closeNavBarModals);
 function closeNavBarModal() {
-  closeNavBarModals = document.querySelectorAll(".w3-modal");
-  // console.log("closeNavBarModals:", closeNavBarModals);
   closeNavBarModals.forEach((elem) => (elem.style.display = "none"));
 }
+// Closing NavBar Modals by Escape key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeNavBarModals.forEach((elem) => (elem.style.display = "none"));
+  }
+});
