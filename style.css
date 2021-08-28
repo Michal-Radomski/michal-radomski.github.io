@@ -1,19 +1,5 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  font-family: "Ubuntu", sans-serif !important;
-  background-color: initial;
-}
-
-.ubuntuFonts {
-  font-family: "Ubuntu", sans-serif !important;
-}
-
 html {
-  font-family: "Ubuntu", sans-serif !important;
+  font-family: "Ubuntu", sans-serif;
 }
 
 h1,
@@ -22,10 +8,16 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Ubuntu", sans-serif !important;
-  font-weight: 400;
-  line-height: 1;
-  margin: 20px 0;
+  font-family: "Ubuntu", sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
 }
 
 div.w3-top {
@@ -45,9 +37,10 @@ h1.title {
   color: unset;
 }
 
-h2 {
+h2.appTittle {
   text-align: center;
   text-shadow: unset;
+  color: unset;
 }
 
 div.myWrapper {
@@ -107,7 +100,6 @@ div.myWrapper div.picPart img:hover {
 
 footer h3 {
   text-align: center;
-  color: unset;
   font-style: italic;
 }
 
@@ -125,7 +117,6 @@ div.modal {
   position: fixed;
   z-index: 1;
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
@@ -214,21 +205,18 @@ div.modalNavBar header {
 }
 
 div.modalNavBar header h2 {
-  font-family: "Ubuntu", sans-serif !important;
+  color: inherit;
 }
 
 div.modalNavBar div.modalContent {
   color: inherit;
-  font-family: "Ubuntu", sans-serif !important;
 }
 
 div.modalNavBar footer {
-  color: inherit;
   padding: 20px;
 }
 
 div.modalNavBar footer div button.modalButton {
-  color: inherit;
-  font-family: "Ubuntu", sans-serif !important;
+  font-family: "Ubuntu", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
