@@ -16,7 +16,7 @@ div.w3-top {
   height: 51px !important;
 }
 
-header {
+header.headerMain {
   background-image: url(./Media/header.jpg);
   width: 100%;
   height: 685px;
@@ -187,5 +187,23 @@ div.modal #caption {
     max-height: 95%;
     max-width: 95%;
   }
+}
+
+div.modalNavBar {
+  color: inherit header;
+  color-color: inherit;
+}
+
+div.modalNavBar div.modalContent {
+  color: inherit;
+}
+
+div.modalNavBar footer {
+  color: inherit;
+  padding: 20px;
+}
+
+div.modalNavBar footer div button.modalButton {
+  color: inherit;
 }
 /*# sourceMappingURL=style.css.map */

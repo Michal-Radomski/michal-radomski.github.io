@@ -41,7 +41,9 @@
         >
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume</a>
         <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
-        <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Credits</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()"
+          >Credits</a
+        >
       </div>
       <!-- Navbar on small screens -->
       <div id="topNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -50,11 +52,11 @@
         >
         <a href="#" class="w3-bar-item w3-button w3-padding-large">Resume</a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">Contact</a>
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">Credits</a>
+        <a class="w3-bar-item w3-button w3-padding-large" onclick="openCreditsModal()">Credits</a>
       </div>
     </div>
     <!-- Header -> only image -->
-    <header class="w3-container w3-indigo w3-center"></header>
+    <header class="w3-container w3-indigo w3-center headerMain"></header>
     <h1 class="title ubuntuFonts">Some of my projects</h1>
     <!-- ISS Tracker 3D Grid -->
     <div class="w3-row-padding w3-padding-64 w3-container">
@@ -184,24 +186,25 @@
   </body>
 </html>
 
-<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">
-  Open Animated Modal
-</button>
-
-<div id="id01" class="w3-modal">
+<div id="creditsModal" class="w3-modal modalNavBar">
   <div class="w3-modal-content w3-animate-zoom w3-card-4">
     <header class="w3-container w3-teal">
-      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright"
-        >&times;</span
-      >
-      <h2>Modal Header</h2>
+      <span onclick="closeCreditsModal()" class="w3-button w3-display-topright">&times;</span>
+      <h2>Credits</h2>
     </header>
-    <div class="w3-container">
+    <div class="w3-container modalContent">
       <p>Some text..</p>
       <p>Some text..</p>
     </div>
     <footer class="w3-container w3-teal">
-      <p>Modal Footer</p>
+      <div class="w3-center">
+        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeCreditsModal()">
+          Close
+        </button>
+
+      </div>
+
+      </div>
     </footer>
   </div>
 </div>

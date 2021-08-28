@@ -59,3 +59,12 @@ document.addEventListener("keydown", function (event) {
     // modal.style.display = "none";  //* the same what above
   }
 });
+
+// Modals
+// Credits Modal
+function openCreditsModal() {
+  document.querySelector("#creditsModal").style.display = "block";
+}
+function closeCreditsModal() {
+  document.querySelector("#creditsModal").style.display = "none";
+}
