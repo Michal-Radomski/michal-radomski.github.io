@@ -288,10 +288,10 @@ div.modalNavBar footer div button.modalButton:hover {
   color: white !important;
 }
 
-div.resume {
-  width: 850px;
-  height: auto;
-  border: 1px red whitesmoke;
+div.resumeContent {
+  width: 100%;
+  height: 100%;
+  border: 1px solid whitesmoke;
   margin-right: auto;
   margin-left: auto;
   background-color: whitesmoke;
@@ -311,7 +311,7 @@ div.resume {
           align-items: center;
 }
 
-div.resume div.headerResume {
+div.resumeContent div.headerResume {
   background-color: #4a89dc;
   color: whitesmoke;
   width: 100%;
@@ -320,7 +320,7 @@ div.resume div.headerResume {
   position: relative;
 }
 
-div.resume div.headerResume div.fullName {
+div.resumeContent div.headerResume div.fullName {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
@@ -330,35 +330,47 @@ div.resume div.headerResume div.fullName {
           transform: translate(-50%, -50%);
 }
 
-div.resume div.headerResume img {
+div.resumeContent div.headerResume img {
   margin: 10px;
 }
 
-div.resume div.aboutMe,
-div.resume div.skills {
+@media screen and (max-width: 992px) {
+  div.resumeContent div.headerResume img {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  div.resumeContent div.headerResume img {
+    width: 80px;
+  }
+}
+
+div.resumeContent div.aboutMe,
+div.resumeContent div.skills {
   width: 100%;
   height: auto;
   background-color: whitesmoke;
   border-radius: 0;
 }
 
-div.resume div.aboutMe div.description,
-div.resume div.skills div.description {
+div.resumeContent div.aboutMe div.description,
+div.resumeContent div.skills div.description {
   margin: 12px;
 }
 
-div.resume div.aboutMe div.description a,
-div.resume div.skills div.description a {
+div.resumeContent div.aboutMe div.description a,
+div.resumeContent div.skills div.description a {
   color: #3f51b5;
 }
 
-div.resume div.aboutMe div.description a:hover,
-div.resume div.skills div.description a:hover {
+div.resumeContent div.aboutMe div.description a:hover,
+div.resumeContent div.skills div.description a:hover {
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
 }
 
-div.resume div.skills {
+div.resumeContent div.skills {
   border-radius: 0 0 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */

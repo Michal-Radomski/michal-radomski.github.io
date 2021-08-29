@@ -98,7 +98,7 @@ footer {
   }
 }
 
-//The Big Modal Images
+// -The Big Modal Images
 // The Modal - background
 div.modal {
   display: none; // Hidden by default
@@ -200,7 +200,7 @@ div.modalNavBar {
         text-decoration: underline;
       }
     }
-    // p in Contact Modal
+    // p in modalContact
     p.modalContact {
       display: flex;
       flex-direction: row;
@@ -245,12 +245,11 @@ div.modalNavBar {
     }
   }
 }
-
-// Resume div
-div.resume {
-  width: 850px;
-  height: auto;
-  border: 1px red whitesmoke;
+// -div.resumeContent
+div.resumeContent {
+  width: 100%;
+  height: 100%;
+  border: 1px solid whitesmoke;
   margin-right: auto;
   margin-left: auto;
   background-color: whitesmoke;
@@ -276,6 +275,12 @@ div.resume {
     }
     img {
       margin: 10px;
+      @media screen and (max-width: 992px) {
+        width: 100px;
+      }
+      @media screen and (max-width: 600px) {
+        width: 80px;
+      }
     }
   }
   div.aboutMe,
