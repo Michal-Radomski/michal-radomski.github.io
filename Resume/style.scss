@@ -1,6 +1,43 @@
 body {
   background-color: unset;
+  font-family: inherit;
 }
 * {
   box-sizing: border-box;
+}
+div.resume {
+  width: 800px;
+  height: 600px;
+  border: 1px red solid;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  div.headerResume {
+    background-color: #4a89dc;
+    color: whitesmoke;
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    div.fullName {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .aboutMe {
+    width: 100%;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 0;
+  }
+  .skills {
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+    border-radius: 0 0 10px 10px;
+  }
 }
