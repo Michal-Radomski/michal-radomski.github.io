@@ -260,12 +260,12 @@ div.modalNavBar div.modalContent p.modalContact a.linkButton:hover {
           filter: brightness(100%);
 }
 
-div.modalNavBar div.modalContent button.emailButton {
+div.modalNavBar div.modalContent a.emailButton {
   border: 2px solid #3f51b5 !important;
   font-weight: bold !important;
 }
 
-div.modalNavBar div.modalContent button.emailButton:hover {
+div.modalNavBar div.modalContent a.emailButton:hover {
   color: #3f51b5 !important;
   background-color: white !important;
   text-decoration: underline;
