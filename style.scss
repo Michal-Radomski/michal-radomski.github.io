@@ -191,12 +191,44 @@ div.modalNavBar {
   }
   div.modalContent {
     font-size: 16px;
+    margin: 20px;
     a {
       color: $primaryLink-color;
       text-decoration: none;
       &:hover {
         filter: brightness(60%);
         text-decoration: underline;
+      }
+    }
+    // p in Contact Modal
+    p.modalContact {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      user-select: none;
+      span {
+        color: darkmagenta;
+        font: bolder;
+      }
+      a.linkButton {
+        color: $primaryLink-color !important;
+        &:hover {
+          color: white !important;
+          background-color: teal !important;
+          filter: brightness(100%);
+        }
+      }
+    }
+    // Email me button in Contact Modal
+    button.emailButton {
+      border: 2px solid #3f51b5 !important;
+      font-weight: bold !important;
+      &:hover {
+        color: #3f51b5 !important;
+        background-color: white !important;
+        text-decoration: underline;
+        filter: brightness(100%);
       }
     }
   }
@@ -211,19 +243,5 @@ div.modalNavBar {
         color: white !important;
       }
     }
-  }
-}
-p.modalContact {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  // float: left;
-  // left: 20px;
-  span {
-    // float: right;
-    color: darkmagenta;
-    font: bold;
-    // right: 20px;
   }
 }

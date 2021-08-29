@@ -211,6 +211,7 @@ div.modalNavBar header h2 {
 
 div.modalNavBar div.modalContent {
   font-size: 16px;
+  margin: 20px;
 }
 
 div.modalNavBar div.modalContent a {
@@ -222,6 +223,54 @@ div.modalNavBar div.modalContent a:hover {
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
   text-decoration: underline;
+}
+
+div.modalNavBar div.modalContent p.modalContact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+div.modalNavBar div.modalContent p.modalContact span {
+  color: darkmagenta;
+  font: bolder;
+}
+
+div.modalNavBar div.modalContent p.modalContact a.linkButton {
+  color: #3f51b5 !important;
+}
+
+div.modalNavBar div.modalContent p.modalContact a.linkButton:hover {
+  color: white !important;
+  background-color: teal !important;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+}
+
+div.modalNavBar div.modalContent button.emailButton {
+  border: 2px solid #3f51b5 !important;
+  font-weight: bold !important;
+}
+
+div.modalNavBar div.modalContent button.emailButton:hover {
+  color: #3f51b5 !important;
+  background-color: white !important;
+  text-decoration: underline;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
 }
 
 div.modalNavBar footer {
@@ -237,23 +286,5 @@ div.modalNavBar footer div button.modalButton {
 div.modalNavBar footer div button.modalButton:hover {
   background-color: teal !important;
   color: white !important;
-}
-
-p.modalContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-p.modalContact span {
-  color: darkmagenta;
-  font: bold;
 }
 /*# sourceMappingURL=style.css.map */

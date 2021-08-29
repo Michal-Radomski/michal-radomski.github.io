@@ -36,14 +36,22 @@
         <a
           href="https://github.com/Michal-Radomski"
           target="_blank"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GH Profile</a>
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+          >GH Profile</a
+        >
         <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openResumeModal()">Resume</a>
-        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openContactModal()">Contact</a>
-        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()">Credits</a>
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openContactModal()"
+          >Contact</a
+        >
+        <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()"
+          >Credits</a
+        >
       </div>
       <!-- Navbar on small screens -->
       <div id="topNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-        <a href="https://github.com/Michal-Radomski" target="_blank" class="w3-bar-item w3-button w3-padding-large">GH Profile</a>
+        <a href="https://github.com/Michal-Radomski" target="_blank" class="w3-bar-item w3-button w3-padding-large"
+          >GH Profile</a
+        >
         <a class="w3-bar-item w3-button w3-padding-large" onclick="openResumeModal()">Resume</a>
         <a class="w3-bar-item w3-button w3-padding-large" onclick="openContactModal()">Contact</a>
         <a class="w3-bar-item w3-button w3-padding-large" onclick="openCreditsModal()">Credits</a>
@@ -88,7 +96,7 @@
           <img src="./App_pics/GameWorld.png" alt="GameWorld Service - the Home Page" />
         </div>
         <div class="w3-half textPart">
-          <h5 class="w3-padding-24 ">GAMEWORLD is a web application developed in ReactJS using Firebase.</h5>
+          <h5 class="w3-padding-24">GAMEWORLD is a web application developed in ReactJS using Firebase.</h5>
           <h6>
             <a href="https://gameworld-a20b3.web.app/" target="_black">Link to the application</a>
           </h6>
@@ -111,7 +119,7 @@
       <h2 class="appTittle">Random Color Generator</h2>
       <div class="w3-content myWrapper">
         <div class="w3-half textPart">
-          <h5 class="w3-padding-24 ">
+          <h5 class="w3-padding-24">
             This is a random color generator and color modifier. Bootstrap material was used to build the application.
           </h5>
           <h6>
@@ -120,7 +128,7 @@
           <h6>
             <a href="https://github.com/Michal-Radomski/Color-generator-boostrap" target="_blank">Link to the repository</a>
           </h6>
-          <p class="w3-text-grey ">
+          <p class="w3-text-grey">
             The application generates one of 16.777 million colors and queries
             <a href="https://www.thecolorapi.com" target="_blank">https://www.thecolorapi.com</a> for the nearest HTML color
             with the name. Then you can change the color with the RGB sliders. The color changes continuously and is
@@ -150,12 +158,12 @@
           <h6>
             <a href="https://test-proj-gda3.web.app/" target="_black">Link to the application</a>
           </h6>
-          <h6 >
+          <h6>
             <a href="https://github.com/Michal-Radomski/Truly-Random-Password-Generator" target="_blank"
               >Link to the repository</a
             >
           </h6>
-          <p class="w3-text-grey ">
+          <p class="w3-text-grey">
             The application gets a string of true random characters from
             <a href="https://www.random.org" target="_blank">https://www.random.org</a>. Later, you can choose a random
             password length (between min and max - this is a pseudo-random number) or set the password length. Then you can
@@ -167,9 +175,9 @@
     </div>
     <!-- The Modal Big Image -->
     <div id="modalImage" class="modal">
-      <span class="close ">&times;</span>
+      <span class="close">&times;</span>
       <img class="modal-content" id="imageBig" />
-      <div id="caption" ></div>
+      <div id="caption"></div>
     </div>
     <!-- NavBar Modals -->
     <!-- Credits Modal -->
@@ -179,20 +187,95 @@
           <h2>Credits</h2>
         </header>
         <div class="w3-container modalContent">
-          <p><a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3 CSS framework</a> was used as the layout template and to build the UI elements.</p>
-          <p><a href="https://www.npmjs.com/package/randomcolor" target="_blank">RandomColor.js</a> was used to generate random colors.</p>
+          <p>
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">W3 CSS framework</a> was used as the layout
+            template and to build the UI elements.
+          </p>
+          <p>
+            <a href="https://www.npmjs.com/package/randomcolor" target="_blank">RandomColor.js</a> was used to generate
+            random colors.
+          </p>
           <p>The icons were taken form <a href="https://www.flaticon.com/" target="_blank">Flaticon.com</a>.</p>
         </div>
         <footer class="w3-container w3-teal">
           <div class="w3-center">
-            <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
+            <button
+              class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton"
+              onclick="closeNavBarModal()"
+            >
               Close
             </button>
-          </div>
           </div>
         </footer>
       </div>
     </div>
+    <!-- Contact Modal -->
+    <div id="contactModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar" style="max-width: 550px">
+        <header class="w3-container w3-teal">
+          <h2>Contact</h2>
+        </header>
+        <div class="w3-container modalContent">
+          <!-- +Email is encoded -->
+          <p class="modalContact">
+            E-mail: <span>&#109;&#105;&#99;&#104;&#97;&#108;&#114;&#97;&#64;&#111;&#112;&#46;&#112;&#108;</span>
+          </p>
+          <p class="modalContact">
+            View my LinkedIn profile:
+            <a
+              type="button"
+              class="w3-button w3-white w3-border w3-border-teal w3-round-large linkButton"
+              href="https://www.linkedin.com/in/m-radomski"
+              target="_blank"
+              >Click here</a
+            >
+          </p>
+          <div class="w3-center" style="margin-top: 10px; margin-bottom: 10px">
+            <!-- +Email is encoded -->
+            <button
+              class="w3-button w3-indigo w3-round-large emailButton"
+              href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#99;&#104;&#97;&#108;&#114;&#97;&#64;&#111;&#112;&#46;&#112;&#108;"
+            >
+              Email me
+            </button>
+          </div>
+        </div>
+        <footer class="w3-container w3-teal">
+          <div class="w3-center">
+            <button
+              class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton"
+              onclick="closeNavBarModal()"
+            >
+              Close
+            </button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
+        <header class="w3-container w3-teal">
+          <h2>Resume</h2>
+        </header>
+        <div class="w3-container modalContent">
+          <p>Some text..</p>
+          <p>Some text..</p>
+        </div>
+        <footer class="w3-container w3-teal">
+          <div class="w3-center">
+            <button
+              class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton"
+              onclick="closeNavBarModal()"
+            >
+              Close
+            </button>
+          </div>
+        </footer>
+      </div>
+    </div>
+
     <!-- Footer -->
     <footer class="w3-container w3-padding-16 w3-center">
       <h3 id="footerInfo">
@@ -201,47 +284,3 @@
     </footer>
   </body>
 </html>
-
-<!-- Contact Modal -->
-<div id="contactModal" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar" style="max-width: 550px;">
-    <header class="w3-container w3-teal">
-      <h2>Contact</h2>
-    </header>
-    <div class="w3-container modalContent">
-        <!-- -Email is encoded -->
-        <p class="modalContact">E-mail: <span>&#109;&#105;&#99;&#104;&#97;&#108;&#114;&#97;&#64;&#111;&#112;&#46;&#112;&#108;</span></p>
-
-        <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#105;&#99;&#104;&#97;&#108;&#114;&#97;&#64;&#111;&#112;&#46;&#112;&#108;">Email me</a>
-    </div>
-    <footer class="w3-container w3-teal">
-      <div class="w3-center">
-        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
-          Close
-        </button>
-      </div>
-      </div>
-    </footer>
-  </div>
-</div>
-
-<!-- Resume Modal -->
-<div id="resumeModal" class="w3-modal">
-  <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
-    <header class="w3-container w3-teal">
-      <h2>Resume</h2>
-    </header>
-    <div class="w3-container modalContent">
-      <p>Some text..</p>
-      <p>Some text..</p>
-    </div>
-    <footer class="w3-container w3-teal">
-      <div class="w3-center">
-        <button class="w3-button w3-white w3-border w3-border-teal w3-round-large modalButton" onclick="closeNavBarModal()">
-          Close
-        </button>
-      </div>
-      </div>
-    </footer>
-  </div>
-</div>
