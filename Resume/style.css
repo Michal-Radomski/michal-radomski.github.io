@@ -11,7 +11,7 @@ body {
 div.resume {
   width: 800px;
   height: 600px;
-  border: 1px red solid;
+  border: 1px red whitesmoke;
   margin-right: auto;
   margin-left: auto;
   background-color: whitesmoke;
@@ -54,17 +54,31 @@ div.resume div.headerResume img {
   margin: 10px;
 }
 
-div.resume .aboutMe {
+div.resume div.aboutMe,
+div.resume div.skills {
   width: 100%;
   height: 200px;
   background-color: whitesmoke;
   border-radius: 0;
 }
 
-div.resume .skills {
-  width: 100%;
-  height: 200px;
-  background-color: lightblue;
+div.resume div.aboutMe div.description,
+div.resume div.skills div.description {
+  margin: 12px;
+}
+
+div.resume div.aboutMe div.description a,
+div.resume div.skills div.description a {
+  color: #3f51b5;
+}
+
+div.resume div.aboutMe div.description a:hover,
+div.resume div.skills div.description a:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+div.resume div.skills {
   border-radius: 0 0 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */

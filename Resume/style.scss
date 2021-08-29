@@ -1,6 +1,9 @@
+$primaryLink-color: #3f51b5;
+$font-stack: "Ubuntu", sans-serif;
+
 body {
   background-color: unset;
-  font-family: "Ubuntu", sans-serif;
+  font-family: $font-stack;
 }
 * {
   box-sizing: border-box;
@@ -8,7 +11,7 @@ body {
 div.resume {
   width: 800px;
   height: 600px;
-  border: 1px red solid;
+  border: 1px red whitesmoke;
   margin-right: auto;
   margin-left: auto;
   background-color: whitesmoke;
@@ -36,16 +39,23 @@ div.resume {
       margin: 10px;
     }
   }
-  .aboutMe {
+  div.aboutMe,
+  div.skills {
     width: 100%;
     height: 200px;
     background-color: whitesmoke;
     border-radius: 0;
+    div.description {
+      margin: 12px;
+      a {
+        color: $primaryLink-color;
+        &:hover {
+          filter: brightness(60%);
+        }
+      }
+    }
   }
-  .skills {
-    width: 100%;
-    height: 200px;
-    background-color: lightblue;
+  div.skills {
     border-radius: 0 0 10px 10px;
   }
 }
