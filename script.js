@@ -9,7 +9,7 @@ function ResponsiveMenu() {
 }
 
 // Adding random textShadow for apps tittle -> h2.appTittle
-let randomColorsTitle = randomColor({count: 4, luminosity: "light", alpha: 0.85});
+let randomColorsTitle = randomColor({count: 5, luminosity: "light", alpha: 0.85});
 // console.log("randomColorsTitle:", randomColorsTitle);
 let titleBGC = document.querySelectorAll("h2.appTittle");
 // console.log("titleBGC:", titleBGC);
@@ -19,7 +19,7 @@ titleBGC.forEach(
 0px 0px 35px ${randomColorsTitle[i]}, 0px 0px 35px ${randomColorsTitle[i]}`)
 );
 // Adding random color of the test for apps tittle -> h2.appTittle
-let randomColorsTitleText = randomColor({count: 4, hue: "red || purple", luminosity: "dark", alpha: 1.0});
+let randomColorsTitleText = randomColor({count: 5, hue: "red || purple", luminosity: "dark", alpha: 1.0});
 randomColorsTitleText = randomColorsTitleText.reverse();
 titleBGC.forEach((elem, i) => (elem.style.color = randomColorsTitleText[i]));
 
