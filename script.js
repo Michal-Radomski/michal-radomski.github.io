@@ -77,6 +77,10 @@ function openContactModal() {
 function openResumeModal() {
   document.querySelector("#resumeModal").style.display = "block";
 }
+// GH 3D Skyline Modal
+function openGH3DSkylineModal() {
+  document.querySelector("#GH3DSkylineModal").style.display = "block";
+}
 // Close NavBar Modal by button
 closeNavBarModals = document.querySelectorAll(".w3-modal");
 // console.log("closeNavBarModals:", closeNavBarModals);
