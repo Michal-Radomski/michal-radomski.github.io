@@ -373,4 +373,11 @@ div.resumeContent div.skills div.description a:hover {
 div.resumeContent div.skills {
   border-radius: 0 0 10px 10px;
 }
+
+div.GH3DSkylineModel {
+  width: 100%;
+  min-height: 600px;
+  margin: 0;
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
