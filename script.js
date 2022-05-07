@@ -28,9 +28,15 @@ randomColorsTitleText = randomColorsTitleText.reverse();
 titleBGC.forEach((elem, i) => (elem.style.color = randomColorsTitleText[i]));
 
 // Random color for text of title and footer
-let randomColorsText = randomColor({count: 2, hue: "green || blue || pink|| purple", luminosity: "dark", alpha: 0.9});
-document.querySelector("#footerInfo").style.color = randomColorsText[0];
-document.querySelector("h1.title").style.color = randomColorsText[1];
+let randomColorsTextTitle = randomColor({count: 1, hue: "green || blue || pink|| purple", luminosity: "dark", alpha: 0.9});
+document.querySelector("h1.title").style.color = randomColorsTextTitle[0];
+let randomColorsTextFooter = randomColor({
+  count: 1,
+  hue: "orange || yellow || pink|| purple",
+  luminosity: "light",
+  alpha: 0.9,
+});
+document.querySelector("#footerInfo").style.color = randomColorsTextFooter[0];
 
 // Displaying the Modal Image
 // Getting the Modal

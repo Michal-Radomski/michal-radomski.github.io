@@ -104,12 +104,14 @@ footer h3 {
 }
 
 footer h3 a {
+  -webkit-filter: brightness(160%);
+          filter: brightness(160%);
   color: #3f51b5;
 }
 
 footer h3 a:hover {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
 }
 
 div.modal {

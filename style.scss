@@ -90,9 +90,10 @@ footer {
     text-align: center;
     font-style: italic;
     a {
+      filter: brightness(160%);
       color: $primaryLink-color;
       &:hover {
-        filter: brightness(60%);
+        filter: brightness(110%);
       }
     }
   }
