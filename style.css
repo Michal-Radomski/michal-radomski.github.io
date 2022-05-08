@@ -391,4 +391,28 @@ div.GH3DSkylineModel model-viewer {
   min-height: 550px;
   background-color: #3f51b5;
 }
+
+@media screen and (max-width: 750px) {
+  .w3-hide-small {
+    display: none !important;
+  }
+  .w3-hide-medium,
+  .w3-hide-large {
+    display: block;
+  }
+  #menuButton {
+    display: block !important;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .w3-hide-small {
+    display: block !important;
+  }
+  .w3-hide-medium,
+  .w3-hide-large,
+  #menuButton {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
