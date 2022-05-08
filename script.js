@@ -3,10 +3,15 @@ function ResponsiveMenu() {
   let nav_top = document.getElementById("topNav");
   // console.log("nav_top:", nav_top);
   // console.log("nav_top.className:", nav_top.className);
+
   if (nav_top.className.indexOf("w3-show") == -1) {
     nav_top.className += " w3-show";
+    // Fixed Responsiveness
+    nav_top.style.setProperty("display", "block", "important");
   } else {
     nav_top.className = nav_top.className.replace(" w3-show", "");
+    // Fixed Responsiveness
+    nav_top.style.setProperty("display", "none", "important");
   }
   // console.log("nav_top.className.indexOf('w3-show'):", nav_top.className.indexOf("w3-show"));
 }
