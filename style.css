@@ -12,8 +12,7 @@ h6 {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -44,56 +43,36 @@ h2.appTittle {
 }
 
 div.myWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
   max-width: 1260px !important;
 }
-
 div.myWrapper div.textPart {
   margin-right: 10px;
   margin-left: 10px;
 }
-
 div.myWrapper div.textPart a {
   color: #3f51b5;
 }
-
 div.myWrapper div.textPart a:hover {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  filter: brightness(60%);
 }
-
 div.myWrapper div.picPart {
   max-width: 450px !important;
   min-width: 380px !important;
   margin-right: 10px;
   margin-left: 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 div.myWrapper div.picPart img {
   width: 100%;
   border-radius: 12px;
   cursor: pointer;
-  -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
 div.myWrapper div.picPart img:hover {
   opacity: 0.75;
 }
@@ -102,16 +81,12 @@ footer h3 {
   text-align: center;
   font-style: italic;
 }
-
 footer h3 a {
-  -webkit-filter: brightness(160%);
-          filter: brightness(160%);
+  filter: brightness(160%);
   color: #3f51b5;
 }
-
 footer h3 a:hover {
-  -webkit-filter: brightness(110%);
-          filter: brightness(110%);
+  filter: brightness(110%);
 }
 
 div.modal {
@@ -126,7 +101,6 @@ div.modal {
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.8);
 }
-
 div.modal span.close {
   position: absolute;
   top: 20px;
@@ -134,23 +108,19 @@ div.modal span.close {
   color: yellowgreen;
   font-size: 45px;
   font-weight: bolder;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-
 div.modal span.close:hover, div.modal span.close:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
-
 div.modal img.modal-content {
   margin: auto;
   display: block;
   max-height: 85%;
   max-width: 85%;
 }
-
 div.modal #caption {
   margin: auto;
   display: block;
@@ -177,18 +147,14 @@ div.modal #caption {
     -webkit-transform: scale(1);
   }
 }
-
 @keyframes zoom {
   from {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   to {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 @media only screen and (max-width: 700px) {
   img.modal-content {
     margin: auto;
@@ -197,94 +163,68 @@ div.modal #caption {
     max-width: 95%;
   }
 }
-
 div.modalNavBar {
   border-radius: 25px;
 }
-
 div.modalNavBar header {
   border-radius: 25px 25px 0 0;
 }
-
 div.modalNavBar header h2 {
   text-align: center;
   font-style: italic;
 }
-
 div.modalNavBar div.modalContent {
   font-size: 16px;
   margin: 20px;
 }
-
 div.modalNavBar div.modalContent a {
   color: #3f51b5;
   text-decoration: none;
 }
-
 div.modalNavBar div.modalContent a:hover {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  filter: brightness(60%);
   text-decoration: underline;
 }
-
 div.modalNavBar div.modalContent p.modalContact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-
 div.modalNavBar div.modalContent p.modalContact span {
   color: darkmagenta;
   font: bolder;
 }
-
 div.modalNavBar div.modalContent p.modalContact a.linkButton {
   color: #3f51b5 !important;
 }
-
 div.modalNavBar div.modalContent p.modalContact a.linkButton:hover {
   color: white !important;
   background-color: teal !important;
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
+  filter: brightness(100%);
 }
-
 div.modalNavBar div.modalContent a.emailButton {
   border: 2px solid #3f51b5 !important;
   font-weight: bold !important;
 }
-
 div.modalNavBar div.modalContent a.emailButton:hover {
   color: #3f51b5 !important;
   background-color: white !important;
   text-decoration: underline;
-  -webkit-filter: brightness(100%);
-          filter: brightness(100%);
+  filter: brightness(100%);
 }
-
 div.modalNavBar footer {
   padding: 20px;
   border-radius: 0 0 25px 25px;
 }
-
 div.modalNavBar footer div button.modalButton {
   font-family: "Ubuntu", sans-serif;
   font-style: italic;
 }
-
 div.modalNavBar footer div button.modalButton:hover {
   background-color: teal !important;
   color: white !important;
@@ -298,21 +238,11 @@ div.resumeContent {
   margin-left: auto;
   background-color: whitesmoke;
   border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 div.resumeContent div.headerResume {
   background-color: #4a89dc;
   color: whitesmoke;
@@ -321,33 +251,27 @@ div.resumeContent div.headerResume {
   border-radius: 10px 10px 0 0;
   position: relative;
 }
-
 div.resumeContent div.headerResume div.fullName {
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
 div.resumeContent div.headerResume img {
   margin: 10px;
 }
-
 @media screen and (max-width: 992px) {
   div.resumeContent div.headerResume img {
     width: 100px;
   }
 }
-
 @media screen and (max-width: 600px) {
   div.resumeContent div.headerResume img {
     width: 80px;
   }
 }
-
 div.resumeContent div.aboutMe,
 div.resumeContent div.skills {
   width: 100%;
@@ -355,23 +279,18 @@ div.resumeContent div.skills {
   background-color: whitesmoke;
   border-radius: 0;
 }
-
 div.resumeContent div.aboutMe div.description,
 div.resumeContent div.skills div.description {
   margin: 12px;
 }
-
 div.resumeContent div.aboutMe div.description a,
 div.resumeContent div.skills div.description a {
   color: #3f51b5;
 }
-
 div.resumeContent div.aboutMe div.description a:hover,
 div.resumeContent div.skills div.description a:hover {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  filter: brightness(60%);
 }
-
 div.resumeContent div.skills {
   border-radius: 0 0 10px 10px;
 }
@@ -382,10 +301,8 @@ div.GH3DSkylineModel {
   margin: 0 !important;
   overflow: hidden;
   background-color: #3f51b5;
-  -webkit-filter: brightness(85%);
-          filter: brightness(85%);
+  filter: brightness(85%);
 }
-
 div.GH3DSkylineModel model-viewer {
   width: 100%;
   min-height: 550px;
@@ -397,22 +314,20 @@ div.GH3DSkylineModel model-viewer {
     display: none !important;
   }
   .w3-hide-medium,
-  .w3-hide-large {
+.w3-hide-large {
     display: block;
   }
   #menuButton {
     display: block !important;
   }
 }
-
 @media screen and (min-width: 751px) {
   .w3-hide-small {
     display: block !important;
   }
   .w3-hide-medium,
-  .w3-hide-large,
-  #menuButton {
+.w3-hide-large,
+#menuButton {
     display: none !important;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
