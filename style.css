@@ -56,9 +56,11 @@ div.myWrapper div.textPart {
 }
 div.myWrapper div.textPart a {
   color: #3f51b5;
+  text-decoration: none;
 }
 div.myWrapper div.textPart a:hover {
   filter: brightness(60%);
+  text-decoration: underline;
 }
 div.myWrapper div.picPart {
   max-width: 450px !important;

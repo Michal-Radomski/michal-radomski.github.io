@@ -62,8 +62,10 @@ div.myWrapper {
     margin-left: 10px;
     a {
       color: $primaryLink-color;
+      text-decoration: none;
       &:hover {
         filter: brightness(60%);
+        text-decoration: underline;
       }
     }
   }
