@@ -44,7 +44,7 @@
           >Contact</a
         >
         <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openGH3DSkylineModal()"
-          >GH 3D Skyline 😉</a
+          >GH 3D Skylines 😉</a
         >
         <a class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openCreditsModal()"
           >Credits</a
@@ -476,22 +476,40 @@
       </div>
     </div>
 
-    <!-- GH 3D Skyline Modal -->
+    <!-- GH 3D Skylines Modal -->
     <div id="GH3DSkylineModal" class="w3-modal">
       <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
         <header class="w3-container w3-teal">
-          <h2>GH 3D Skyline Model - 2021 😉</h2>
+          <h2>GH 3D Skyline Models - 2021 and 2022 😉</h2>
         </header>
         <div class="w3-container GH3DSkylineModel">
           <model-viewer
             bounds="tight"
-            src="/Media/MR_GH3D_Skyline_Model.glb"
+            src="/Media/GH3D_Skyline_Model_2021.glb"
             camera-controls="true"
             enable-pan="true"
             shadow-intensity="0.85"
             exposure="1.20"
             shadow-softness="0.50"
-            camera-orbit="5deg 145deg 75%"
+            camera-orbit="5deg 145deg 55%"
+            preload="true"
+            roughness="0.35"
+            metalness="0.85"
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+          <hr />
+          <model-viewer
+            bounds="tight"
+            src="/Media/GH3D_Skyline_Model_2022.glb"
+            camera-controls="true"
+            enable-pan="true"
+            shadow-intensity="0.85"
+            exposure="1.20"
+            shadow-softness="0.50"
+            camera-orbit="5deg 145deg 55%"
             preload="true"
             roughness="0.35"
             metalness="0.85"

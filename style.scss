@@ -310,15 +310,20 @@ div.resumeContent {
 // -div.GH3DSkylineModel
 div.GH3DSkylineModel {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   margin: 0 !important;
+  padding: 0 !important;
   overflow: hidden;
   background-color: $primaryLink-color;
   filter: brightness(85%);
   model-viewer {
     width: 100%;
-    min-height: 550px;
+    min-height: 350px;
     background-color: $primaryLink-color;
+  }
+  hr {
+    margin: 0;
+    border-top: 2px solid teal;
   }
 }
 

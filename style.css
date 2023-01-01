@@ -299,16 +299,21 @@ div.resumeContent div.skills {
 
 div.GH3DSkylineModel {
   width: 100%;
-  min-height: 500px;
+  min-height: 700px;
   margin: 0 !important;
+  padding: 0 !important;
   overflow: hidden;
   background-color: #3f51b5;
   filter: brightness(85%);
 }
 div.GH3DSkylineModel model-viewer {
   width: 100%;
-  min-height: 550px;
+  min-height: 350px;
   background-color: #3f51b5;
+}
+div.GH3DSkylineModel hr {
+  margin: 0;
+  border-top: 2px solid teal;
 }
 
 @media screen and (max-width: 750px) {
