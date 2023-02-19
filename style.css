@@ -140,15 +140,6 @@ div.modal #caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
-
-@-webkit-keyframes zoom {
-  from {
-    -webkit-transform: scale(0);
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
 @keyframes zoom {
   from {
     transform: scale(0);
@@ -194,7 +185,6 @@ div.modalNavBar div.modalContent p.modalContact {
   justify-content: space-between;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 div.modalNavBar div.modalContent p.modalContact span {
@@ -321,7 +311,7 @@ div.GH3DSkylineModel hr {
     display: none !important;
   }
   .w3-hide-medium,
-.w3-hide-large {
+  .w3-hide-large {
     display: block;
   }
   #menuButton {
@@ -333,8 +323,8 @@ div.GH3DSkylineModel hr {
     display: block !important;
   }
   .w3-hide-medium,
-.w3-hide-large,
-#menuButton {
+  .w3-hide-large,
+  #menuButton {
     display: none !important;
   }
 }/*# sourceMappingURL=style.css.map */
