@@ -1,4 +1,5 @@
-let bits = {
+//* picture: let!
+const bits = {
   bit_0: 0,
   bit_1: 1,
   showBits() {
