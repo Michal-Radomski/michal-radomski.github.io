@@ -482,9 +482,9 @@
 
     <!-- GH 3D Skylines Modal -->
     <div id="GH3DSkylineModal" class="w3-modal">
-      <div class="w3-modal-content w3-animate-zoom w3-card-4 modalNavBar">
+      <div class="w3-modal-content w3-animate-zoom w3-card-4 w3-teal modalNavBar">
         <header class="w3-container w3-teal">
-          <h2>GH 3D Skyline Models - 2021 and 2022 😉</h2>
+          <h2>GH 3D Skyline Models: 2021 - 2023 😉</h2>
         </header>
         <div class="w3-container GH3DSkylineModel">
           <model-viewer
@@ -508,6 +508,24 @@
           <model-viewer
             bounds="tight"
             src="/Media/GH3D_Skyline_Model_2022.glb"
+            camera-controls="true"
+            enable-pan="true"
+            shadow-intensity="0.85"
+            exposure="1.20"
+            shadow-softness="0.50"
+            camera-orbit="5deg 145deg 55%"
+            preload="true"
+            roughness="0.35"
+            metalness="0.85"
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+          <hr />
+          <model-viewer
+            bounds="tight"
+            src="/Media/GH3D_Skyline_Model_2023.glb"
             camera-controls="true"
             enable-pan="true"
             shadow-intensity="0.85"

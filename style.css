@@ -156,8 +156,13 @@ div.modal #caption {
     max-width: 95%;
   }
 }
+div#GH3DSkylineModal {
+  padding-top: 0;
+}
+
 div.modalNavBar {
   border-radius: 25px;
+  overflow-y: auto;
 }
 div.modalNavBar header {
   border-radius: 25px 25px 0 0;
@@ -288,9 +293,9 @@ div.resumeContent div.skills {
 }
 
 div.GH3DSkylineModel {
-  width: 100%;
-  min-height: 700px;
-  margin: 0 !important;
+  width: calc(100% - 2rem);
+  height: auto;
+  margin: 0 1rem;
   padding: 0 !important;
   overflow: hidden;
   background-color: #3f51b5;
@@ -298,7 +303,7 @@ div.GH3DSkylineModel {
 }
 div.GH3DSkylineModel model-viewer {
   width: 100%;
-  min-height: 350px;
+  min-height: 275px;
   background-color: #3f51b5;
 }
 div.GH3DSkylineModel hr {
