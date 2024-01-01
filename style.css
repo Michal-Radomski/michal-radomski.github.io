@@ -79,9 +79,13 @@ div.myWrapper div.picPart img:hover {
   opacity: 0.75;
 }
 
+footer {
+  background-color: #656565;
+}
 footer h3 {
   text-align: center;
   font-style: italic;
+  opacity: 0.6;
 }
 footer h3 a {
   filter: brightness(160%);
@@ -89,6 +93,11 @@ footer h3 a {
 }
 footer h3 a:hover {
   filter: brightness(110%);
+}
+footer p.p-footer {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 0.25rem auto;
 }
 
 div.modal {

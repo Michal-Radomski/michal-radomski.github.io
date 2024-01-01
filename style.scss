@@ -86,11 +86,14 @@ div.myWrapper {
     }
   }
 }
+
 // Footer
 footer {
+  background-color: #656565;
   h3 {
     text-align: center;
     font-style: italic;
+    opacity: 0.6;
     a {
       filter: brightness(160%);
       color: $primaryLink-color;
@@ -98,6 +101,11 @@ footer {
         filter: brightness(110%);
       }
     }
+  }
+  p.p-footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto 0.25rem auto;
   }
 }
 
